@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aleti Pravalika — Data Science Engineer portfolio with a clean navy, teal and blue visual system" />
+  <title>Aleti Pravalika | Data Science Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+  <header class="nav">
+    <a class="logo magnetic" href="#home">AP<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme magnetic" id="themeBtn" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <svg class="hero-art" viewBox="0 0 700 700" aria-hidden="true">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="var(--accent)"/>
+            <stop offset="100%" stop-color="var(--accent-2)"/>
+          </linearGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="10" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <circle cx="350" cy="350" r="245" fill="none" stroke="url(#g1)" stroke-width="1" stroke-dasharray="3 12" class="orbit orbit-a"/>
+        <circle cx="350" cy="350" r="175" fill="none" stroke="var(--line)" stroke-width="1" class="orbit orbit-b"/>
+        <circle cx="350" cy="350" r="105" fill="none" stroke="url(#g1)" stroke-width="2" stroke-dasharray="2 8" class="orbit orbit-c"/>
+        <path d="M95 470 C190 270 275 545 365 315 S540 170 620 340" fill="none" stroke="url(#g1)" stroke-width="2" filter="url(#glow)" class="wave"/>
+        <g class="data-nodes">
+          <circle cx="350" cy="105" r="7" fill="var(--accent)"/>
+          <circle cx="595" cy="350" r="7" fill="var(--accent-2)"/>
+          <circle cx="350" cy="595" r="7" fill="var(--accent)"/>
+          <circle cx="105" cy="350" r="7" fill="var(--accent-2)"/>
+        </g>
+        <text x="350" y="340" text-anchor="middle" class="svg-label">DATA</text>
+        <text x="350" y="372" text-anchor="middle" class="svg-label small">SCIENCE / AI</text>
+      </svg>
+
+      <div class="hero-visual-cards" aria-hidden="true">
+        <div class="float-card card-data">
+          <span class="card-kicker">LIVE DATA</span>
+          <strong>84.7%</strong>
+          <small>model confidence</small>
+          <svg viewBox="0 0 180 55">
+            <path d="M2 45 C28 42 35 24 56 31 S86 43 103 22 S138 18 178 5"
+                  fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <div class="float-card card-code">
+          <span class="card-kicker">PYTHON</span>
+          <code>df.predict()<br/>→ insight()</code>
+        </div>
+        <div class="float-card card-pulse">
+          <span class="pulse-dot"></span>
+          <span>ANALYTICS<br/><b>ACTIVE</b></span>
+        </div>
+      </div>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> DATA SCIENCE ENGINEER</p>
+        <h1 class="hero-name">ALETI<br/><em>PRAVALIKA</em></h1>
+        <p class="hero-role">DATA SCIENCE · AI · ANALYTICS</p>
+        <p class="hero-text">
+          I’m an enthusiastic data science learner focused on Python, data analysis,
+          machine learning and building practical digital experiences.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary magnetic" href="#projects">Explore my work <span>↗</span></a>
+          <a class="btn ghost magnetic" href="#contact">Let's connect</a>
+        </div>
+      </div>
+
+      <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-head reveal">
+        <span class="number">01</span>
+        <h2>About me<span>.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="big-quote reveal">
+          <div class="constellation" aria-hidden="true">
+            <svg viewBox="0 0 520 340">
+              <defs>
+                <linearGradient id="constellationGradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="var(--accent)"/>
+                  <stop offset="100%" stop-color="var(--accent-2)"/>
+                </linearGradient>
+              </defs>
+              <g class="constellation-lines">
+                <path d="M75 235 L170 105 L285 190 L400 75 L465 225 L330 270 L170 105"/>
+                <path d="M75 235 L330 270 L285 190 L465 225"/>
+              </g>
+              <g fill="url(#constellationGradient)">
+                <circle cx="75" cy="235" r="7"/>
+                <circle cx="170" cy="105" r="9"/>
+                <circle cx="285" cy="190" r="7"/>
+                <circle cx="400" cy="75" r="10"/>
+                <circle cx="465" cy="225" r="7"/>
+                <circle cx="330" cy="270" r="8"/>
+              </g>
+              <text x="170" y="88">PY</text>
+              <text x="390" y="58">ML</text>
+              <text x="450" y="250">BI</text>
+            </svg>
+          </div>
+          <span class="quote-mark">“</span>
+          <p>Curious by nature.<br/><strong>Data-driven by choice.</strong></p>
+        </div>
+        <div class="about-copy reveal">
+          <p>
+            I’m currently pursuing B.Tech in CSE — Data Science at TKR College of Engineering
+            and Technology, Hyderabad. I’m looking for an entry-level opportunity where I can
+            apply my foundational skills and grow through hands-on work.
+          </p>
+          <p>
+            My interests sit at the intersection of analysis, visualization, machine learning,
+            and creative web experiences.
+          </p>
+          <div class="quick-facts">
+            <div><small>EDUCATION</small><strong>B.Tech CSE — Data Science</strong></div>
+            <div><small>LOCATION</small><strong>Hyderabad, India</strong></div>
+            <div><small>FOCUS</small><strong>Python · ML · Analytics</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="section-head reveal">
+        <span class="number">02</span>
+        <h2>Toolkit<span>.</span></h2>
+      </div>
+      <div class="skills-wrap reveal">
+        <div class="skill-card"><span>PY</span><h3>Python</h3><p>Analysis · ML · Automation</p></div>
+        <div class="skill-card"><span>DB</span><h3>MySQL</h3><p>Data · Queries · Storage</p></div>
+        <div class="skill-card"><span>BI</span><h3>Power BI</h3><p>Dashboards · Insights</p></div>
+        <div class="skill-card"><span>T</span><h3>Tableau</h3><p>Visualization · Storytelling</p></div>
+        <div class="skill-card"><span>WEB</span><h3>HTML / CSS</h3><p>Responsive interfaces</p></div>
+        <div class="skill-card"><span>J</span><h3>Java</h3><p>Programming fundamentals</p></div>
+      </div>
+      <div class="skill-cloud reveal">
+        <span>DATA ANALYSIS</span><span>MACHINE LEARNING</span><span>EDA</span>
+        <span>DATA VISUALIZATION</span><span>WEB DEVELOPMENT</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-head reveal">
+        <span class="number">03</span>
+        <h2>Selected work<span>.</span></h2>
+      </div>
+
+      <div class="visual-stats reveal">
+        <div class="stat-panel">
+          <span>01</span>
+          <strong>Python</strong>
+          <div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="stat-panel">
+          <span>02</span>
+          <strong>Analytics</strong>
+          <div class="radial"><b>EDA</b></div>
+        </div>
+        <div class="stat-panel">
+          <span>03</span>
+          <strong>Visualization</strong>
+          <div class="mini-line">
+            <svg viewBox="0 0 180 45"><path d="M3 38 C25 34 35 12 55 25 S88 32 106 15 S145 22 177 5"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <article class="project featured reveal">
+        <div class="project-visual">
+          <svg viewBox="0 0 600 420" aria-hidden="true">
+            <defs>
+              <linearGradient id="chart" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0%" stop-color="var(--accent-2)"/>
+                <stop offset="100%" stop-color="var(--accent)"/>
+              </linearGradient>
+            </defs>
+            <path d="M35 350H565M35 280H565M35 210H565M35 140H565M35 70H565" class="grid-line"/>
+            <path d="M45 330 C110 315 115 270 175 285 S235 190 285 230 S360 130 410 170 S475 80 555 100" fill="none" stroke="url(#chart)" stroke-width="6" class="chart-line"/>
+            <circle cx="175" cy="285" r="6"/><circle cx="285" cy="230" r="6"/><circle cx="410" cy="170" r="6"/><circle cx="555" cy="100" r="6"/>
+          </svg>
+          <span class="project-index">01</span>
+        </div>
+        <div class="project-info">
+          <p class="project-type">DATA ANALYSIS / PREDICTION</p>
+          <h3>E-Commerce Furniture<br/><i>Data Analysis</i></h3>
+          <p>Analyzing e-commerce furniture data to understand market behavior and predict the number of items sold using product attributes such as title, original price, price and tag text.</p>
+          <div class="tags"><span>Python</span><span>EDA</span><span>ML</span><span>Visualization</span></div>
+        </div>
+      </article>
+
+      <article class="project reverse reveal">
+        <div class="project-visual video-visual">
+          <svg viewBox="0 0 600 420" aria-hidden="true">
+            <circle cx="300" cy="210" r="125" class="ring"/>
+            <circle cx="300" cy="210" r="82" class="ring second"/>
+            <path d="M215 255 L260 220 L292 240 L345 170 L390 190" fill="none" stroke="var(--accent)" stroke-width="6"/>
+            <path d="M300 88V35M300 385V332M178 210H125M475 210H422" stroke="var(--line)" />
+            <text x="300" y="217" text-anchor="middle" class="svg-label">YT</text>
+          </svg>
+          <span class="project-index">02</span>
+        </div>
+        <div class="project-info">
+          <p class="project-type">MACHINE LEARNING / EDA</p>
+          <h3>YouTube Channel<br/><i>Real Performance Analysis</i></h3>
+          <p>Exploring channel performance with EDA, visualization and predictive modeling to uncover trends and estimate revenue or subscriber growth from a dataset.</p>
+          <div class="tags"><span>Python</span><span>EDA</span><span>Prediction</span><span>Insights</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience" class="section experience">
+      <div class="section-head reveal">
+        <span class="number">04</span>
+        <h2>Experience & credentials<span>.</span></h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="time">06.2025 — 07.2025</div>
+          <div class="timeline-dot"></div>
+          <div><p class="project-type">INTERNSHIP</p><h3>Data Analyst — Elevate Labs</h3><p>Worked on data visualization and analysis using Tableau, Power BI and Python.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">CERTIFICATION</div>
+          <div class="timeline-dot"></div>
+          <div><p class="project-type">SALESFORCE</p><h3>Agentforce Specialist</h3><p>Salesforce certification focused on Agentforce.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">CERTIFICATION</div>
+          <div class="timeline-dot"></div>
+          <div><p class="project-type">ORACLE</p><h3>AI Foundation Associate</h3><p>AI foundation credential.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">PROGRAMS</div>
+          <div class="timeline-dot"></div>
+          <div><p class="project-type">INTERNSHIPS / COHORTS</p><h3>Unified Mentor · Infosys · Pragathi</h3><p>Experience and learning programs including Unified Mentor internship, Infosys internship and Pragathi: Path to Future Cohort-6.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div>DATA • AI • MACHINE LEARNING • ANALYTICS • DATA VISUALIZATION • PYTHON • </div>
+      <div>DATA • AI • MACHINE LEARNING • ANALYTICS • DATA VISUALIZATION • PYTHON • </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-visual" aria-hidden="true">
+        <svg viewBox="0 0 500 500">
+          <circle cx="250" cy="250" r="210" class="contact-orbit"/>
+          <circle cx="250" cy="250" r="150" class="contact-orbit second"/>
+          <circle cx="250" cy="250" r="85" class="contact-core"/>
+          <path d="M95 350 C160 300 185 205 250 250 S350 350 405 145"
+                fill="none" stroke="var(--accent)" stroke-width="2"/>
+          <circle cx="95" cy="350" r="6" fill="var(--accent-2)"/>
+          <circle cx="405" cy="145" r="6" fill="var(--accent)"/>
+          <text x="250" y="244" text-anchor="middle">LET'S</text>
+          <text x="250" y="268" text-anchor="middle">BUILD</text>
+        </svg>
+      </div>
+      <div class="contact-inner reveal">
+        <p class="eyebrow"><span></span> HAVE A PROJECT IN MIND?</p>
+        <h2>Let’s make something<br/><em>meaningful.</em></h2>
+        <a class="email-link magnetic" href="mailto:aletipravalikareddy2@gmail.com">aletipravalikareddy2@gmail.com <span>↗</span></a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/aleti-pravalika-reddy-7365382aa" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/pravalika2318" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://leetcode.com/u/Aletipravalika/" target="_blank" rel="noreferrer">LeetCode</a>
+          <a href="https://www.credly.com/users/pravalika-reddy.1fa963cd" target="_blank" rel="noreferrer">Credly</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> ALETI PRAVALIKA</span>
+    <span>BUILT WITH HTML · CSS · JS · SVG</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
